@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>GCSE Directive TEST</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body ng-app="test">
+<div ng-controller="testController as test">
+  <label>Titel</label>
+  <input ng-model="test.query" placeholder="Geef een wenstitel in"/>
+  <google-image-search
+    data-query="{{test.query}}"
+    data-image-result="test.image"></google-image-search>
+  <img ng-show="test.image" ng-src="{{test.image}}" alt="Geselecteerde afbeelding">
+  <button type="button" name="button" ng-click="test.clear()">Clear</button>
+</div>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+  <script type="text/javascript" src="ui-bootstrap-tpls-2.5.0.min.js"></script>
+  <script src="app.js"></script>
+  <script src="gcse-directive.js"></script>
+  <script src="searchService.js"></script>
+  <script src="gcsePopup-controller.js"></script>
+</body>
+</html>
