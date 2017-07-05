@@ -9,7 +9,8 @@
   <input ng-model="test.query" placeholder="Geef een wenstitel in"/>
   <google-image-search
     data-query="{{test.query}}"
-    data-image-result="test.image"></google-image-search>
+    data-image-result="test.image"
+    data-config="{{test.config}}"></google-image-search>
   <img ng-show="test.image" ng-src="{{test.image}}" alt="Geselecteerde afbeelding">
   <button type="button" name="button" ng-click="test.clear()">Clear</button>
 </div>
