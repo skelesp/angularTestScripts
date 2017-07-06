@@ -6,13 +6,12 @@
 <body ng-app="test">
 <div ng-controller="testController as test">
   <label>Titel</label>
-  <input ng-model="test.query" placeholder="Geef een wenstitel in"/>
-  <google-image-search
-    data-query="{{test.query}}"
-    data-image-result="test.image"
-    data-config="{{test.config}}"></google-image-search>
-  <img ng-show="test.image" ng-src="{{test.image}}" alt="Geselecteerde afbeelding">
   <button type="button" name="button" ng-click="test.clear()">Clear</button>
+  <input ng-model="test.query" placeholder="Geef een wenstitel in"/>
+  <button type="button"	class="btn btn-danger btn-lg" google-image-search="{{test.query}}" data-image-result="test.image">
+  Zoek een afbeelding
+  </button>
+  <img ng-show="test.image" ng-src="{{test.image}}" google-image-search="{{test.query}}" data-image-result="test.image" alt="Geselecteerde afbeelding">
 </div>
 
   <!-- Scripts -->
