@@ -37,7 +37,6 @@ angular.module('gcse',[
                 })
                 .catch(function () {
                   // Modal dismissed.
-                  $scope.imageResult = "";
                 });
               });
             } else {
