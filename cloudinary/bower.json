@@ -1,0 +1,21 @@
+{
+  "name": "cloudinary",
+  "authors": [
+    "Stijn Beeckmans <stijn.beeckmans@gmail.com>"
+  ],
+  "description": "",
+  "main": "app.js",
+  "license": ".",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "cloudinary_ng": "1.x"
+  }
+}

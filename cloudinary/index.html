@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="cloudinaryTest">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Test cloudinary</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <cl-image public-id="samples/landscapes/nature-mountains.jpg" class="thumbnail inline" angle="20" format="jpg">
+        <cl-transformation height="150" width="150" crop="fill" gravity="north" effect="sepia" radius="20" />
+    </cl-image>
+    <cl-image public-id="samples/animals/reindeer.jpg" class="thumbnail inline" angle="20" format="jpg">
+        <cl-transformation height="150" width="150" crop="fill" gravity="north" effect="sepia" radius="50" />
+    </cl-image>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+<script src="bower_components/lodash/lodash.min.js"></script>
+<script src="bower_components/cloudinary-core/cloudinary-core.min.js"></script>
+<script src="bower_components/cloudinary_ng/js/angular.cloudinary.js"></script>
+<script src="app.js"></script>
+</html>
